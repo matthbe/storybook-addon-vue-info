@@ -23,11 +23,9 @@ export function extractDocgenInfo(component: AnyComponent): Extracted {
 
   const events = docs.events
     ? normalizeAttrs(docs.events).map(ev => {
-        const type = ev.type ? ev.type.names.join(', ') : ''
-
         return {
           name: ev.name,
-          type,
+          type: ev.type ? ev.type.names.join(', ') : 'any',
           description: ev.description
         }
       })
