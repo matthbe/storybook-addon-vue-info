@@ -11,6 +11,4 @@ node_modules
 # Package packed by `npm pack`
 *.tgz
 
-lib
-
 example/build

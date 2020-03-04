@@ -1,0 +1,20 @@
+Name: dedent-tabs
+Version: 0.8.0
+License: MIT
+Private: false
+Description: An ES6 string tag that strips indentation from multi-line strings
+Repository: git://github.com/adrianjost/dedent-tabs.git
+Homepage: https://github.com/adrianjost/dedent-tabs
+Contributors:
+  Adrian Jost <me@adrianjost.dev> (https://adrianjost.dev)
+  Desmond Brand <dmnd@desmondbrand.com> (http://desmondbrand.com)
+
+---
+
+Name: vue-runtime-helpers
+Version: 1.0.0
+License: MIT
+Private: false
+Description: Runtime helpers for Vue SFC.
+Repository: undefined
+Author: Rahul Kadyan
