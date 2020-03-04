@@ -4,7 +4,7 @@ import { AnyComponent } from '../types/vue'
 type Extracted = Pick<ComponentInfo, Exclude<keyof ComponentInfo, 'name'>>
 
 const normalizeAttrs = (attrs: { [name: string]: any } | any[]): any[] =>
-  attrs instanceof Array ? attrs : Object.keys(attrs).map(key => attrs[key])
+  attrs instanceof Array ? attrs : Object.keys(attrs).map(key => ({ name: key, ...attrs[key] }))
 
 export function extractDocgenInfo(component: AnyComponent): Extracted {
   const docs = (component as any).__docgenInfo
